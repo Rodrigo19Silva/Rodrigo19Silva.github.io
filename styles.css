@@ -1,0 +1,17 @@
+body {
+    background-color: #b3b3b3;
+}
+a {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1rem;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+  }
+  
+  a:hover {
+    color: #2980b9;
+    border-bottom: 2px solid #2980b9;
+  }
