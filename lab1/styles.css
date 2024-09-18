@@ -1,31 +1,97 @@
-body{
-    background-color: burlywood;
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-img{
-    display: block;
+/* Corpo com gradiente animado */
+body {
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-size: 200% 200%;
+  background-attachment: fixed;
+  animation: backgroundMove 10s ease infinite;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Estilo e animação da imagem */
+img {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h1{
-    font-size: 70px;
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Animação de entrada do título */
+h1, h2 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+h1 {
+  font-size: 70px;
   font-weight: 600;
   background-image: linear-gradient(to left, #553c9a, #b393d3);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  margin-bottom: 20px;
+  animation-delay: 0.2s;
 }
 
-h2{
-    font-family: 'Arial', sans-serif;
-  font-size: 2rem;
-  color: #2c3e50;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
+h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #b393d3;
+  margin-bottom: 40px;
+  animation-delay: 0.5s;
+}
+
+/* Animação fade-in up */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Botão de ação chamativo */
+.btn {
+  padding: 15px 30px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #7261ba;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4f388b;
+  transform: scale(1.05);
 }
