@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cidade</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bergen</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Local</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="info.html">Informação</a>
+            <a href="quizz.html">Quizz</a>
+            <a href="viagem.html">Viagem</a>
+        </nav>
+        <figure>
+            <img src="images/bergen.jpg" alt="Bergen">
+            <figcaption>Vista panorâmica de Bergen, uma encantadora cidade costeira da Noruega!</figcaption>
+        </figure>
+    </header>
+    <h2>Quizz</h2>
+    <section id="quizz">
+        <form method="get" action="https://postman-echo.com/get">
+            <section id="dados-pessoais">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <label id="nome-label">Nome</label>
+                    <input type="text" placeholder="Nome" id="nome-input" required><br><br>
+                    <label id="apelido-label">Apelido</label>
+                    <input type="text" placeholder="Apelido" id="apelido-input" required><br><br>
+                    <label id="email-label">Email</label>
+                    <input type="email" placeholder="Email" id="email-input" required><br><br>
+                </fieldset>
+            </section>
+            <section id="Bergen-Quizz">
+                <fieldset>
+                    <legend><b>Quiz de Conhecimento Geral sobre Bergen</b></legend>
+
+
+                    <label id="famousarea-label">1. Qual é o nome da famosa área histórica de Bergen, Patrimônio Mundial
+                        da
+                        UNESCO?</label><br>
+                    <input type="text" id="famousarea-input" name="famous-area" required><br><br>
+
+
+                    <label id="raindays-label">2. Quantos dias, em média, chove por ano em Bergen?</label><br>
+                    <input type="number" id="raindays-input" name="rain-days" min="0" max="365" required><br><br>
+
+
+                    <label id="mountains-label">3. Qual destas montanhas faz parte das "Sete Montanhas" que rodeiam
+                        Bergen?</label><br>
+                    <input type="radio" id="ulriken-input" name="mountain" value="ulriken" required>
+                    <label id="ulriken-label">Monte Ulriken</label><br>
+                    <input type="radio" id="everest-input" name="mountain" value="everest">
+                    <label id="alpes-label">Montanha Everest</label><br><br>
+                    <input type="radio" id="alpes-input" name="mountain" value="everest">
+                    <label id="everest-label">Alpes</label><br><br>
+
+
+                    <label id="foods-label">4. Quais destas comidas típicas podes encontrar no mercado de peixe de
+                        Bergen? (Escolha
+                        múltipla)</label><br>
+                    <input type="checkbox" id="salmon-input" name="fish[]" value="salmon">
+                    <label id="salmon-label">Salmão</label><br>
+                    <input type="checkbox" id="whale-input" name="fish" value="whale">
+                    <label id="whale-label">Carne de Baleia</label><br>
+                    <input type="checkbox" id="crab-input" name="fish" value="crab">
+                    <label id="crab-label">Caranguejo</label><br><br>
+
+
+                    <label id="trip-date-label">5. Se pudesses visitar Bergen, qual seria a data da tua
+                        viagem?</label><br>
+                    <input type="date" id="trip-date-input" name="trip-date" required><br><br>
+
+                    <label id="email-label">6. Qual é o teu email para receberes o resultado do quiz?</label><br>
+                    <input type="email" id="email-input" name="email" required><br><br>
+
+
+                    <label id="bergen-love-label">7. Numa escala de 1 a 10, o quanto gostarias de visitar
+                        Bergen?</label><br>
+                    <input type="range" id="bergen-love-input" name="bergen-love" min="1" max="10"><br><br>
+
+
+                    <label id="color-label">8. Qual cor achas que melhor representa Bergen?</label><br>
+                    <input type="color" id="color-input" name="favorite-color"><br><br>
+
+
+                    <label id="phone-label">9. Qual o teu número de telefone (caso precises de mais
+                        informações)?</label><br>
+                    <input type="tel" id="phone-input" name="phone"><br><br>
+
+
+                    <label id="season-label">10. Qual estação do ano seria ideal para visitar Bergen?</label><br>
+                    <select id="season-select" name="season">
+                        <option value="verao">Verão</option>
+                        <option value="inverno">Inverno</option>
+                        <option value="primavera">Primavera</option>
+                        <option value="outono">Outono</option>
+                    </select><br><br>
+
+
+                    <label for="comments">11. Descreve numa frase por que gostarias de visitar Bergen.</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+
+                    <label for="city-choice">12. Qual outra cidade norueguesa te interessa visitar além de
+                        Bergen?</label><br>
+                    <input list="cities" id="city-choice" name="city-choice">
+                    <datalist id="cities">
+                        <option value="Oslo">
+                        <option value="Stavanger">
+                        <option value="Trondheim">
+                        <option value="Tromsø">
+                    </datalist><br><br>
+                </fieldset>
+            </section>
+        </form>
+    </section>
+</body>
