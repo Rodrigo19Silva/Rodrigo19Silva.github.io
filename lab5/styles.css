@@ -20,6 +20,14 @@ nav a {
 
 }
 
+tr:nth-child(odd) {
+    background-color: #E2F1E7;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #629584;
+  }
+
 label {
     font-size: small;
     margin: 10px;
@@ -61,17 +69,24 @@ label, input {
 }
 
 
+
+
   a:focus {
     color: black;
   }
   
   a:hover {
     background: #A5FFD6;
-    
+    color: black;
   }
   
   a:active {
     color: white;
+  }
+
+  a{
+    margin: 10px;
+    padding: 10px;
   }
 img {
     margin: auto;
