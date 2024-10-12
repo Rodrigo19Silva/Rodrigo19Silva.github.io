@@ -184,6 +184,7 @@ section {
     font-weight: bold;
     margin: 20px;
     font-size: 1.2em;
+    text-align: center;
 }
 
 
@@ -218,7 +219,7 @@ section {
 }
 
 .hidden-box:hover + .hover-box {
-    display: flex; 
+    display: flex; /
 }
 
 /* Ícones */
