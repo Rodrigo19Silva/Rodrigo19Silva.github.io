@@ -12,21 +12,24 @@ body {
     line-height: 1.6;
 }
 
+
 /* Header */
 header {
-    background-color: #004d7a; /* Fundo mais suave */
+    background-color: #004d7a; /* Mantém o fundo azul */
     color: white;
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px; /* Reduz o padding para compactar */
+    height: 100px; /* Define uma altura menor */
     z-index: 1000;
 }
 
 h1 {
-    margin-left: 20px;
+    font-size: 1.5em; /* Diminui o tamanho do título */
+    margin: 0; /* Remove margem extra */
 }
 
 nav {
@@ -34,26 +37,27 @@ nav {
 }
 
 nav a {
-    padding: 10px 20px;
+    padding: 8px 16px; /* Reduz o padding dos links para ficarem menores */
     color: white;
     text-decoration: none;
     margin: 0 10px;
-    background-color: #0275d8; /* Azul suave para os links */
+    background-color: #0275d8;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 nav a:last-child {
-    background-color: #5bc0de; /* Azul mais claro */
+    background-color: #5bc0de;
 }
 
 nav a:hover {
-    background-color: #f0ad4e; /* Laranja suave no hover */
+    background-color: #f0ad4e;
 }
 
+
 #poema {
-    width: 10vw;
-    height: 10vh;
+    width: 100vw;
+    height: 20vh;
     background-color: #e0f7fa; /* Fundo azul claro */
     display: flex;
     justify-content: center;
@@ -94,8 +98,8 @@ section {
 }
 
 .image-container img {
-    width: 100%;
-    max-width: 800px;
+    width: 100vw;
+    max-width: 100%;
     border-radius: 10px;
 }
 
