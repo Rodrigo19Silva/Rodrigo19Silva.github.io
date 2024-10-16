@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bergen</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Local</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="info.html">Informação</a>
+            <a href="quizz.html">Quizz</a>
+            <a href="viagem.html">Viagem</a>
+        </nav>
+        <figure>
+            <img src="images/bergen.jpg" alt="Bergen">
+            <figcaption>Vista panorâmica de Bergen, uma encantadora cidade costeira da Noruega!</figcaption>
+        </figure>
+    </header>
+    <h2>Viagem</h2>
+    <section id="quizz">
+        <form method="get" action="https://postman-echo.com/get">
+            <section id="dados-pessoais">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <label id="nome-label">Nome</label>
+                    <input type="text" placeholder="Nome" id="nome-input" required><br><br>
+
+                    <label id="apelido-label">Apelido</label>
+                    <input type="text" placeholder="Apelido" id="apelido-input" required><br><br>
+
+                    <label id="email-label">Email</label>
+                    <input type="email" placeholder="Email" id="email-input" required><br><br>
+
+                    <label id="arrive-date-label">Data de partida</label>
+                    <input type="date" id="arrive-date-input" name="trip-date" required><br><br>
+
+                    <label id="departure-date-label">Data de regresso</label>
+                    <input type="date" id="departure-date-input" name="trip-date" required><br><br>
+
+                    <label id="passengers-label">Número de passageiros</label><br><br>
+                    <input type="number" id="passengers-input" name="rain-days" min="0" max="365" required><br><br>
+
+                    <label id="passengers-label">Meio de transporte favorito</label><br><br>
+                    <input list="transport" id="transport-choice" name="transport-choice">
+                    <datalist id="transport">
+                        <option value="Avião">
+                        <option value="Carro">
+                        <option value="Bicicleta">
+                        <option value="Mota">
+                    </datalist><br><br>
+
+                    <label id="service">Qual o serviço que deseja na sua viagem</label><br><br>
+                    <input type="radio" id="basic-input" name="service" value="basic" required>
+                    <label id="basic-label">Básico</label><br>
+                    <input type="radio" id="premium-input" name="service" value="premium">
+                    <label id="premium-label">Premium</label><br><br>
+
+                    <label for="special-requests">Pedidos especiais:</label><br>
+                    <textarea id="special-requests" name="special-requests" rows="4" cols="50"
+                        placeholder="Escreva aqui os seus pedidos especiais..."></textarea><br><br>
+
+                    <label for="budget">Qual o valor que espera gastar por pessoa e por dia na sua viagem ?</label><br>
+                    <input type="number" id="budget" name="budget" min="0" step="1" placeholder="Ex: 100"><br><br>
+                </fieldset>
+            </section>
+            <section>
+                <iframe name="photoFrame" width="800" height="600" frameborder="1"></iframe>
+
+                <ul>
+                    <li><a href="images/bergen2_grande.jpg" target="photoFrame">Ver Foto 1</a></li>
+                    <li><a href="images/bergen3_grande.jpg" target="photoFrame">Ver Foto 2</a></li>
+                    <li><a href="images/bergen4_grande.jpg" target="photoFrame">Ver Foto 3</a></li>
+                </ul>
+            </section>
+        </form>
+    </section>
+</body>
