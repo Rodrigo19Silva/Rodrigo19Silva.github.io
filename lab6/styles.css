@@ -7,6 +7,14 @@ figure{
   margin: 20px;
 }
 
+h2{
+  padding: 30px;
+}
+
+h3{
+  padding: 30px;
+}
+
 figcaption{
   color: black;
   font-size: 18px;
@@ -20,9 +28,14 @@ table {
   margin-top: 20px;
 }
 
+aside a:hover {
+  background-color: transparent; 
+}
+
 ul li,
 ol li {
-  font-size: 2em;
+  font-size: 20px;
+  padding: 20px;
 }
 
 @media (min-width:601px) {
@@ -30,7 +43,7 @@ ol li {
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-rows: 9vw 10vw 1fr 5vw;
+    grid-template-rows: 9vw 8vw 1fr 3vw;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas:
       'header header header'
@@ -102,7 +115,6 @@ body>* {
 
 th {
   background-color: #004165;
-  /* Cabeçalho da tabela */
   color: white;
   padding: 10px;
   font-weight: bold;
@@ -130,10 +142,12 @@ td:first-child {
 
 nav {
   background-color: #472836;
-  font-size: 20px;
+  font-size: 18px;
   padding: 30px;
   text-align: center;
   color: white;
+  height: 80px;
+  width: 100%;
 }
 
 nav a {
@@ -145,10 +159,15 @@ nav a {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+aside img:hover{
+  background-color: none;
+}
+
 
 label {
-  font-size: small;
+  font-size: 20px;
   margin: 10px;
+  text-align: left;
 }
 
 input {
@@ -234,4 +253,6 @@ footer {
   text-align: center;
   color: #272932;
   padding: 10px 0;
+  
+  
 }

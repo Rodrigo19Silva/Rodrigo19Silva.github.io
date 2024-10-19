@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Cidade</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
@@ -11,10 +11,6 @@
 <body>
     <header>
         <h1>Bergen</h1>
-        <figure>
-            <img src="images/bergen.jpg" alt="Bergen">
-            <figcaption>Vista panorâmica de Bergen, uma encantadora cidade costeira da Noruega!</figcaption>
-        </figure>
     </header>
 
     <nav>
@@ -24,111 +20,116 @@
         <a href="info.html">Informação</a>
         <a href="quizz.html">Quizz</a>
         <a href="viagem.html">Viagem</a>
+        <a href="capitais.html">Capitais</a>
+        <a href="pontosinteresse.html">Pontos de Interesse</a>
+        <a href="viagem.html">Viagem</a>
     </nav>
-    <h2>Quizz</h2>
-    <section id="quizz">
-        <form method="get" action="https://postman-echo.com/get">
-            <section id="dados-pessoais">
-                <fieldset>
-                    <legend>Dados pessoais</legend>
-                    <label for="nome-label">Nome</label>
-                    <input type="text" placeholder="Nome" id="nome-input" required>
-                    <label for="apelido-label">Apelido</label>
-                    <input type="text" placeholder="Apelido" id="apelido-input" required>
-                    <label for="email-label">Email</label>
-                    <input type="email" placeholder="Email" id="email-input" required>
-                </fieldset>
-            </section>
-            <section id="Bergen-Quizz">
-                <fieldset>
-                    <legend><b>Quiz de Conhecimento Geral sobre Bergen</b></legend>
+    <main>
+        <figure>
+            <img src="images/bergen.jpg" alt="Bergen">
+            <figcaption>Vista panorâmica de Bergen, uma encantadora cidade costeira da Noruega!</figcaption>
+        </figure>
+
+        <section id="quizz">
+            <h2>Quiz</h2>
+            <form method="get" action="https://postman-echo.com/get">
+                <section id="dados-pessoais">
+                    <fieldset>
+                        <legend>Dados pessoais</legend>
+                        <label for="nome-label">Nome</label>
+                        <input type="text" placeholder="Nome" id="nome-input" required>
+                        <label for="apelido-label">Apelido</label>
+                        <input type="text" placeholder="Apelido" id="apelido-input" required>
+                        <label for="email-label">Email</label>
+                        <input type="email" placeholder="Email" id="email-input" required>
+                    </fieldset>
+                </section>
+                <section id="Bergen-Quizz">
+                    <fieldset>
+                        <legend><b>Quiz de Conhecimento Geral sobre Bergen</b></legend>
 
 
-                    <label for="famousarea-label">1. Qual é o nome da famosa área histórica de Bergen, Patrimônio
-                        Mundial
-                        da
-                        UNESCO?</label>
-                    <input type="text" id="famousarea-input" name="famous-area" required>
+                        <label for="famousarea-label">1. Qual é o nome da famosa área histórica de Bergen, Patrimônio
+                            Mundial
+                            da
+                            UNESCO?</label>
+                        <input type="text" id="famousarea-input" name="famous-area" required>
 
 
-                    <label for="raindays-label">2. Quantos dias, em média, chove por ano em Bergen?</label>
-                    <input type="number" id="raindays-input" name="rain-days" min="0" max="365" required>
+                        <label for="raindays-label">2. Quantos dias, em média, chove por ano em Bergen?</label>
+                        <input type="number" id="raindays-input" name="rain-days" min="0" max="365" required>
 
 
-                    <label for="mountains-label">3. Qual destas montanhas faz parte das "Sete Montanhas" que rodeiam
-                        Bergen?</label>
-                    <input type="radio" id="ulriken-input" name="mountain" value="ulriken" required>
-                    <label for="ulriken-label">Monte Ulriken</label>
-                    <input type="radio" id="everest-input" name="mountain" value="everest">
-                    <label for="alpes-label">Montanha Everest</label>
-                    <input type="radio" id="alpes-input" name="mountain" value="everest">
-                    <label for="everest-label">Alpes</label>
+                        <label for="mountains-label">3. Qual destas montanhas faz parte das "Sete Montanhas" que rodeiam
+                            Bergen?</label>
+                        <input type="radio" id="ulriken-input" name="mountain" value="ulriken" required>
+                        <label for="ulriken-label">Monte Ulriken</label>
+                        <input type="radio" id="everest-input" name="mountain" value="everest">
+                        <label for="alpes-label">Montanha Everest</label>
+                        <input type="radio" id="alpes-input" name="mountain" value="everest">
+                        <label for="everest-label">Alpes</label>
 
 
-                    <label for="foods-label">4. Quais destas comidas típicas podes encontrar no mercado de peixe de
-                        Bergen? (Escolha
-                        múltipla)</label>
-                    <input type="checkbox" id="salmon-input" name="fish[]" value="salmon">
-                    <label for="salmon-label">Salmão</label>
-                    <input type="checkbox" id="whale-input" name="fish" value="whale">
-                    <label for="whale-label">Carne de Baleia</label>
-                    <input type="checkbox" id="crab-input" name="fish" value="crab">
-                    <label for="crab-label">Caranguejo</label>
+                        <label for="foods-label">4. Quais destas comidas típicas podes encontrar no mercado de peixe de
+                            Bergen? (Escolha
+                            múltipla)</label>
+                        <input type="checkbox" id="salmon-input" name="fish[]" value="salmon">
+                        <label for="salmon-label">Salmão</label>
+                        <input type="checkbox" id="whale-input" name="fish" value="whale">
+                        <label for="whale-label">Carne de Baleia</label>
+                        <input type="checkbox" id="crab-input" name="fish" value="crab">
+                        <label for="crab-label">Caranguejo</label>
 
 
-                    <label for="trip-date-label">5. Se pudesses visitar Bergen, qual seria a data da tua
-                        viagem?</label>
-                    <input type="date" id="trip-date-input" name="trip-date" required>
+                        <label for="trip-date-label">5. Se pudesses visitar Bergen, qual seria a data da tua
+                            viagem?</label>
+                        <input type="date" id="trip-date-input" name="trip-date" required>
 
-                    <label for="email-label">6. Qual é o teu email para receberes o resultado do quiz?</label>
-                    <input type="email" id="email-input" name="email" required>
-
-
-                    <label for="bergen-love-label">7. Numa escala de 1 a 10, o quanto gostarias de visitar
-                        Bergen?</label>
-                    <input type="range" id="bergen-love-input" name="bergen-love" min="1" max="10">
+                        <label for="email-label">6. Qual é o teu email para receberes o resultado do quiz?</label>
+                        <input type="email" id="email-input" name="email" required>
 
 
-                    <label for="color-label">8. Qual cor achas que melhor representa Bergen?</label>
-                    <input type="color" id="color-input" name="favorite-color">
+                        <label for="bergen-love-label">7. Numa escala de 1 a 10, o quanto gostarias de visitar
+                            Bergen?</label>
+                        <input type="range" id="bergen-love-input" name="bergen-love" min="1" max="10">
 
 
-                    <label for="phone-label">9. Qual o teu número de telefone (caso precises de mais
-                        informações)?</label>
-                    <input type="tel" id="phone-input" name="phone">
+                        <label for="color-label">8. Qual cor achas que melhor representa Bergen?</label>
+                        <input type="color" id="color-input" name="favorite-color">
 
 
-                    <label for="season-label">10. Qual estação do ano seria ideal para visitar Bergen?</label>
-                    <select id="season-select" name="season">
-                        <option value="verao">Verão</option>
-                        <option value="inverno">Inverno</option>
-                        <option value="primavera">Primavera</option>
-                        <option value="outono">Outono</option>
-                    </select>
+                        <label for="phone-label">9. Qual o teu número de telefone (caso precises de mais
+                            informações)?</label>
+                        <input type="tel" id="phone-input" name="phone">
 
 
-                    <label for="comments">11. Descreve numa frase por que gostarias de visitar Bergen.</label>
-                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                        <label for="season-label">10. Qual estação do ano seria ideal para visitar Bergen?</label>
+                        <select id="season-select" name="season">
+                            <option value="verao">Verão</option>
+                            <option value="inverno">Inverno</option>
+                            <option value="primavera">Primavera</option>
+                            <option value="outono">Outono</option>
+                        </select>
 
 
-                    <label for="city-choice">12. Qual outra cidade norueguesa te interessa visitar além de
-                        Bergen?</label>
-                    <input list="cities" id="city-choice" name="city-choice">
-                    <datalist id="cities">
-                        <option value="Oslo">
-                        <option value="Stavanger">
-                        <option value="Trondheim">
-                        <option value="Tromsø">
-                    </datalist>
-                </fieldset>
-            </section>
-        </form>
-    </section>
-    <aside>
-        <h2>Publicidade</h2>
-  <a href="https://www.programiz.pro" target="_blank">
-    <img src="https://i.imgur.com/udEua3H.png" alt="Anúncio" width="300" />
-    </aside>
+                        <label for="comments">11. Descreve numa frase por que gostarias de visitar Bergen.</label>
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+
+                        <label for="city-choice">12. Qual outra cidade norueguesa te interessa visitar além de
+                            Bergen?</label>
+                        <input list="cities" id="city-choice" name="city-choice">
+                        <datalist id="cities">
+                            <option value="Oslo">
+                            <option value="Stavanger">
+                            <option value="Trondheim">
+                            <option value="Tromsø">
+                        </datalist>
+                    </fieldset>
+                </section>
+            </form>
+        </section>
+    </main>
     <footer>
         <p>DIW 2024</p>
     </footer>

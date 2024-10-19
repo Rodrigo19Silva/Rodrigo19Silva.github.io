@@ -140,6 +140,7 @@ figure {
 }
 
 footer {
+  position: fixed;
   background-color: azure;
   text-align: center;
   color: #272932;
