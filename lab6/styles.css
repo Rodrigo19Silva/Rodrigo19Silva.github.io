@@ -59,7 +59,7 @@ ol li {
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 9vw 7vw 1fr 7vw 4vw;
+    grid-template-rows: 30vw 25vw;
     grid-template-areas:
       'header'
       'menu'
