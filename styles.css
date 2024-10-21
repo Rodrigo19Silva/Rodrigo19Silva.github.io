@@ -100,7 +100,68 @@ li:hover {
   background: linear-gradient(to right, #ffeb3b, #ff6347);
 }
 
-/* Estilo para parágrafos com efeitos de hover */
+
+@keyframes rotateFade {
+  0% {
+      opacity: 0;
+      transform: rotate(-360deg) scale(0.5);
+  }
+  100% {
+      opacity: 1;
+      transform: rotate(0) scale(1);
+  }
+}
+
+.animate-rotate-fade {
+  animation: rotateFade 2s ease-in-out;
+  font-size: 3em;
+  color: #f06d06;
+}
+
+
+@keyframes slideUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.animate-slide-up a {
+  animation: slideUp 1s ease-out forwards;
+}
+
+.animate-slide-up a:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.animate-slide-up a:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.animate-slide-up a:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.animate-slide-up a:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.animate-slide-up a:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.animate-slide-up a:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+.animate-slide-up a:nth-child(7) {
+  animation-delay: 1.4s;
+}
+
 p {
   font-size: 1.1rem;
   line-height: 1.8;
