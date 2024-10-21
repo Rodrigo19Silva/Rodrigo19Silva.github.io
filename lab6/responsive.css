@@ -1,0 +1,63 @@
+/* Para ecrãs maiores que 900px e até 1200px (Tablets) */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    body {
+      display: grid;
+      width: 100vw;
+      height: 100vh;
+      font-size: 18px;
+      grid-template-rows: 9vw 8vw 1fr 3vw;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-areas:
+        'header header header'
+        'menu menu menu'
+        '. main aside'
+        'footer footer footer';
+    }
+  
+    nav {
+      display: flex;
+    }
+  }
+  
+  /* Para ecrãs de 1201px até 1920px (Laptops) */
+  @media only screen and (min-width: 1201px) and (max-width: 1920px) {
+    body {
+      display: grid;
+      width: 100vw;
+      height: 100vh;
+      font-size: 20px;
+      grid-template-rows: 9vw 8vw 1fr 3vw;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-areas:
+        'header header header'
+        'menu menu menu'
+        '. main aside'
+        'footer footer footer';
+    }
+  
+    nav {
+      display: flex;
+    }
+  }
+  
+ 
+  @media only screen and (min-width: 1921px) {
+    body {
+      display: grid;
+      width: 100vw;
+      height: 100vh;
+      font-size: 22px;
+      grid-template-rows: 9vw 8vw 1fr 3vw;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-areas:
+        'header header header'
+        'menu menu menu'
+        '. main aside'
+        'footer footer footer';
+    }
+  
+    nav {
+      display: flex;
+    }
+  }
+  

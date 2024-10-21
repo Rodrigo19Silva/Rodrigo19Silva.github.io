@@ -13,6 +13,29 @@ body {
 }
 
 
+.parallax {
+    background-image: url('images/sua-foto.webp'); 
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.parallax-text {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
 
 header {
     background-color: #84576b; 

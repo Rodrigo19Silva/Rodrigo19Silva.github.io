@@ -43,7 +43,7 @@ ol li {
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-rows: 9vw 8vw 1fr 3vw;
+    grid-template-rows: 9vw 8vw 1fr 5vw;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas:
       'header header header'
