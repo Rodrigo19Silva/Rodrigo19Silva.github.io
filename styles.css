@@ -1,10 +1,9 @@
 body {
   background-color: black;
   font-family: 'Open Sans', sans-serif;
-  margin: 0;
+  margin: 20px;
   padding: 0;
-  display: flex;
-  flex-direction: column;
+  
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -17,14 +16,23 @@ article{
   text-align: center;
 }
 
+p{
+  padding: 20px;
+}
 
+ul{
+  margin: 30px;
+  padding: 20px;
+}
 
 /* Estilo para links */
 a {
   font-size: 1.2rem;
   color: white;
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 10px;
+  margin: 10px;
+  padding: 30px;
+  height: 40px;
   list-style-position: inside;
   background: #333;
   padding: 10px;
@@ -33,6 +41,8 @@ a {
   transition: 0.3s ease-in-out;
   text-decoration: none;
 }
+
+
 
 
 
@@ -48,8 +58,9 @@ nav{
 
 
 a:hover {
-  color: #2980b9;
-  border-bottom: 2px solid #2980b9;
+  color: white;
+  border-bottom: 2px solid gray;
+  background-color: black;
 }
 
 /* Efeito de transição de página ao clicar em links */
@@ -86,7 +97,7 @@ img {
 }
 
 h3{
-  margin: 20px 40px 50px 100px;
+  padding: 30px;
 }
 
 header{
@@ -96,6 +107,7 @@ header{
   align-content: center;
   margin: 20px;
   padding: 20px 20px 20px 20px;
+  width: 100%;
 }
 
 
@@ -129,8 +141,11 @@ footer{
   margin: 30px;
   width: 100%;
   text-align: center;
+  height: 40px;
+  font-size: 20px;
 }
 section{
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
+  width: 100%;
 }
