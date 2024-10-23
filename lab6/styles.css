@@ -15,6 +15,8 @@ h3{
   padding: 30px;
 }
 
+
+
 figcaption{
   color: black;
   font-size: 18px;
@@ -143,16 +145,20 @@ td:first-child {
 nav {
   background-color: #472836;
   font-size: 18px;
-  padding: 30px;
+  padding: 10px 0;
   text-align: center;
   color: white;
   height: 80px;
   width: 100%;
 }
 
+nav a:hover{
+  background-color: #A5FFD6;;
+}
+
 nav a {
   color: white;
-  padding: 20px;
+  padding: 10px 15px;
   border-radius: 20px;
   text-decoration: none;
   margin: 20px;
